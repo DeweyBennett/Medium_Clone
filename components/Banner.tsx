@@ -11,7 +11,7 @@ function Banner() {
                 </span>{""}
                  is a place to write, read, and connect
             </h1>
-            <h2>it's easy and free topost your thinking on any topic and connect with millions of readers.</h2>
+            <h2>it&apos;s easy and free topost your thinking on any topic and connect with millions of readers.</h2>
         </div>
 
         <Image
