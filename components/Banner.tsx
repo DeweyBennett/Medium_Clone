@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Banner() {
@@ -13,7 +14,7 @@ function Banner() {
             <h2>it's easy and free topost your thinking on any topic and connect with millions of readers.</h2>
         </div>
 
-        <img
+        <Image
             className='hidden md:inline-flex h-32 lg:h-full'
             src='https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png'
             alt=''

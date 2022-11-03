@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -7,7 +8,7 @@ export default function Header() {
         <header className="flex justify-between p-5 max-w-7xl mx-auto">
             <div className="flex items-center space-x-5">
                 <Link href='/'>
-                    <img
+                    <Image
                         className="w-44 object-contain space-x-5"
                         src='https://links.papareact.com/yvf'
                         alt=''

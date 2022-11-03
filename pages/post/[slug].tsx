@@ -6,6 +6,7 @@ import { GetStaticProps } from 'next'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
 import Header from '../../components/Header'
+import Image from 'next/image'
 
 interface Props {
     post: Post
@@ -41,7 +42,7 @@ function Post({ post }: Props) {
     <div>
         <Header />
 
-        <img
+        <Image
             src={urlFor(post.mainImage).url()}
             className='w-full h-40 object-cover'
             alt=''
@@ -52,7 +53,7 @@ function Post({ post }: Props) {
             <h2 className='text-xl font-light text-gray-500 mb-2'>{post._description}</h2>
 
             <div className='flex items-center space-x-2'>
-                <img 
+                <Image 
                     src={urlFor(post.author.image).url()}
                     className='h-10 w-10 rounded-full' 
                     alt="" 

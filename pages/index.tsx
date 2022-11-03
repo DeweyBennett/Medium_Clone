@@ -31,7 +31,7 @@ export default function Home({ posts }: Props) {
             href={`/post/${item.slug.current}`}
           >
             <div className='border rounded-lg group cursor-pointer overflow-hidden'>
-              <img
+              <Image
                 className='h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out'
                 src={urlFor(item.mainImage).url()}
                 alt=''
@@ -43,7 +43,7 @@ export default function Home({ posts }: Props) {
                   <p className='text-xs'>{item._description} by {item.author.name}</p>
                 </div>
 
-                <img
+                <Image
                   className='h-12 w-12 rounded-full'
                   src={urlFor(item.author.image).url()}
                   alt=''
